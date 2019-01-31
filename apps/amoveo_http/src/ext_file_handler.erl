@@ -66,6 +66,11 @@ handle(Req, _) ->
                <<"/unused.js">> -> true;
                <<"/merkle_proofs.js">> -> true;
                <<"/wallet.html">> -> true;
+               <<"/stablecoin.html">> -> true;
+
+               <<"/title2.js">> -> true;
+               <<"/display.js">> -> true;
+               
                <<"/BigInteger.js">> -> true;
                <<"/big_int_test.js">> -> true;
                X -> 
