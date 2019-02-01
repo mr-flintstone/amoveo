@@ -41,7 +41,7 @@
 		     %% also used in block_hashes.erl. this is involved in calculating how many recent block hashes to keep to know which blocks you have already verified.
     {headers_batch, 1001}, %% You download up to this many headers per request.
 
-    {time_value, 1250}, %% This is / (10 expt 8)
+    {time_value, 8}, %% This is / (10 expt 8)
     %% there are around 8000 blocks a month. This node is designed to double its balance at least every 10 months, if it is working at full capacity. It is expected to double its money every 5 months.
     %% the customer is paying about 10% of the money in the channel per month as a fee.
     %% 1250.0 == (math:pow(10, 8) div 80000).
